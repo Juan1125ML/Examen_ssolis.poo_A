@@ -16,8 +16,15 @@ public class Aplicacion {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         Vehiculo v1 = new Vehiculo();
-        System.out.println("Ingrese la marca");
+        System.out.println("ingrese la marca");
         v1.setMarca(leer.next());
+        System.out.println("Ingrese el modelo");
+        v1.setModelo(leer.next());
+        System.out.println("Ingrese la placa");
+        v1.setPlaca(leer.next());
+        System.out.println("Ingrese el color");
+        v1.setColor(leer.next());
+  
         System.out.println(v1.toString());
     }
     

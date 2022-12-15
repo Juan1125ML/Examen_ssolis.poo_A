@@ -13,13 +13,13 @@ package ec.edu.intsuperior.modelo;
 public class Vehiculo {
     private String marca;
     private String modelo;
-    private Boolean placa;
+    private String placa;
     private String color;
 
     public Vehiculo() {
     }
 
-    public Vehiculo(String marca, String modelo, Boolean placa, String color) {
+    public Vehiculo(String marca, String modelo, String placa, String color) {
         this.marca = marca;
         this.modelo = modelo;
         this.placa = placa;
@@ -34,7 +34,7 @@ public class Vehiculo {
         this.modelo = modelo;
     }
 
-    public void setPlaca(Boolean placa) {
+    public void setPlaca(String placa) {
         this.placa = placa;
     }
 
@@ -50,7 +50,7 @@ public class Vehiculo {
         return modelo;
     }
 
-    public Boolean getPlaca() {
+    public String getPlaca() {
         return placa;
     }
 
@@ -65,6 +65,10 @@ public class Vehiculo {
                 + "Modelo: "+getModelo()+"\n"
                 + "Placa: "+getPlaca()+"\n"
                 + "Color: "+getColor();
+    }
+
+    public void getMarca(String next) {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
   
     
